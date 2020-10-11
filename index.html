@@ -184,7 +184,10 @@
             <h2 class="text-white mb-5">Contact Us</h2>
           </div>
 
-          <form netlify action="/form-success.html" name="contact" method="POST" class="row">
+          <form action="/form-success.html" name="contact" method="POST" class="row" netlify-honeypot="bot-field" data-netlify="true">
+            <div class="col-12 d-none">
+              <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </div>
             <div class="col-md-6">
               <input name="email" type="email" class="form-control flex-fill mb-4 mb-md-0" placeholder="Email address...">
             </div>

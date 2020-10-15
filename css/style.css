@@ -41,6 +41,14 @@
   background-color: transparent;
 }
 
+.logo-width {
+  min-width: 180px;
+}
+
+.logo-width img {
+  max-width: 75px;
+}
+
 .masthead {
   position: relative;
   width: 100%;
@@ -48,6 +56,14 @@
   min-height: 35rem;
   padding: 15rem 0;
   background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/pdx.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.masthead.success {
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/trees.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -102,7 +118,9 @@
   background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
 }
 
-.services-section .card {
+.services-section .card,
+.success .card
+ {
   border: 0;
   border-bottom: 0.25rem solid var(--tech-green);
   background-color: var(--tech-black);

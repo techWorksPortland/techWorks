@@ -5,8 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="techWorks description">
-  <meta name="thumbnail" content="https://phuzisham.github.io/techWorks/img/pdx.jpg" />
-
+  
   <title>techWorks</title>
 
   <!-- Bootstrap core CSS -->
@@ -60,11 +59,16 @@
 
   <!-- Header -->
   <header class="masthead">
-    <div class="container d-flex h-100 align-items-center">
+    <div class="container d-flex vh-100 align-items-center">
       <div class="mx-auto text-center">
         <h1 class="mx-auto my-0 text-uppercase">techWorks</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-4">Portland based digital agency taking your site from concept to reality.</h2>
+        <br>
+        <h2 class="text-white-50 mx-auto mt-2 mb-4">Montana based digital agency taking your site from concept to reality.</h2>
+        <br>
         <a href="#contact" class="btn btn-primary js-scroll-trigger">Contact Us</a>
+        <div class="mx-auto " id="chevron">
+          <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        </div>
       </div>
     </div>
   </header>
@@ -224,7 +228,7 @@
               <i class="fas fa-map-marked-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Location</h4>
               <hr class="my-4">
-              <div class="small text-black-50"><p>Portland Oregon</p></div>
+              <div class="small text-black-50"><p>Billings, MT</p></div>
             </div>
           </div>
         </div>
@@ -236,7 +240,7 @@
               <h4 class="text-uppercase m-0">Email</h4>
               <hr class="my-4">
               <div class="small text-black-50">
-                <a href="#">techworksportland@gmail.com</a>
+                <a href="mailto:techworksmontana@gmail.com" target="_blank">techworksmontana@gmail.com</a>
               </div>
             </div>
           </div>
@@ -249,7 +253,7 @@
               <i class="fas fa-mobile-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Phone</h4>
               <hr class="my-4">
-              <div class="small text-black-50"><p>+1(971)280-2730</p></div>
+              <div class="small text-black-50"><p>1(971)280-2730</p></div>
             </div>
           </div>
         </a>
@@ -277,7 +281,8 @@
       <p>Copyright &copy; techWorks 2020</p>
       <div class="row">
         <div class="col-sm-6">
-          <p class="float-sm-right">Masthead image by <a target="_blank" href="https://unsplash.com/@seanbenesh?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge">Sean Benesh</a></p>
+          <p class="float-sm-right">Masthead image by <a href="https://unsplash.com/@mbzzgeorgia?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Michael Bourgault</a> on <a href="https://unsplash.com/photos/green-grass-field-near-brown-mountain-under-blue-sky-during-daytime-wV1gNxqelfk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+          </p>
         </div>
         <div class="col-sm-6">
           <p class="float-sm-left">Footer image by <a target="_blank" href="https://unsplash.com/@digitech?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge">Ruvim Miksanskiy</a></p>
@@ -297,5 +302,12 @@
   <!-- Custom scripts for this template -->
   <script src="js/script.js"></script>
 
+  <script>
+    document.getElementById('chevron').addEventListener('click', function() {
+        document.getElementById('services').scrollIntoView({ 
+            behavior: 'smooth' 
+        });
+    });
+  </script>
 </body>
 </html>

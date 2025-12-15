@@ -13,7 +13,7 @@
 }
 
 #mainNav .navbar-toggler {
-  font-size: 80%;
+  font-size: 100%;
   padding: 0.75rem;
   color: var(--tech-green);
   border: 1px solid var(--tech-green);
@@ -25,8 +25,8 @@
 
 #mainNav .navbar-brand {
   color: var(--tech-black);
-  /* font-weight: 700; */
-  padding: .9rem 0;
+  font-weight: 700;
+  /* padding: .9rem 0; */
   font-family: 'Oswald', sans-serif;
 }
 
@@ -54,7 +54,7 @@
   width: 100%;
   height: auto;
   min-height: 35rem;
-  padding: 15rem 0;
+  padding: 0rem 0;
   background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/michael-bourgault-wV1gNxqelfk-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -72,10 +72,9 @@
 
 .masthead h1 {
   font-family: 'Oswald';
-  font-size: 3.2rem;
-  line-height: 2.5rem;
+  font-size: 10rem;
   letter-spacing: 0.8rem;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.602), rgba(255, 255, 255, 0.094));
   -webkit-text-fill-color: transparent;
   clip: text;
   background-clip: text;
@@ -84,7 +83,7 @@
 
 .masthead h2 {
   max-width: 20rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .btn {
@@ -124,8 +123,8 @@
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 2em; /* Adjust size as needed */
-  color: rgba(255, 255, 255, 0.5); /* Adjust color as needed */
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
   animation: bounce 2s 3;
 }
@@ -144,7 +143,7 @@
 
 
 .services-section {
-  padding-top: 10rem;
+  padding-top: 5rem;
   padding-bottom: 7rem;
   background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
 }
@@ -185,8 +184,8 @@
 
 .contact-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/footer.jpg");
-  background-position: center;
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/footer2.jpg");
+  background-position: center ;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -277,70 +276,81 @@ footer {
   padding: 5rem 0;
 }
 
-@media (min-width: 768px) {
+@media (width <= 1000px) {
   .masthead h1 {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 8rem;
   }
 }
 
-@media (min-width: 992px) {
-  #mainNav {
-    padding-top: 0;
-    padding-bottom: 0;
-    border-bottom: none;
-    background-color: transparent;
-    transition: background-color 0.3s ease-in-out;
+@media (width <= 768px) {
+  .masthead h1 {
+    font-size: 5rem;
   }
+}
 
-  #mainNav .navbar-brand {
-    padding: .5rem 0;
-    color: var(--tech-nav-link);
+@media (width <= 576px) {
+  .masthead h1 {
+    font-size: 3rem;
   }
+}
 
-  #mainNav .nav-link {
-    transition: none;
-    padding: 2rem 1.5rem;
-    color: var(--tech-nav-link);
-  }
 
-  #mainNav .nav-link:hover {
-    color: var(--tech-nav-link-hover);
-  }
+#mainNav {
+  padding-top: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
 
-  #mainNav .nav-link:active {
-    color: white;
-  }
+#mainNav .navbar-brand {
+  padding: .5rem 0;
+  color: var(--tech-nav-link);
+}
 
-  #mainNav.navbar-shrink {
-    background-color: white;
-  }
+#mainNav .nav-link {
+  transition: none;
+  padding: 2rem 1.5rem;
+  color: var(--tech-nav-link);
+}
 
-  #mainNav.navbar-shrink .navbar-brand {
-    color: var(--tech-black);
-  }
+#mainNav .nav-link:hover {
+  color: var(--tech-nav-link-hover);
+}
 
-  #mainNav.navbar-shrink .nav-link {
-    color: var(--tech-black);
-    padding: 1.25rem 1.5rem 1rem;
-    border-bottom: 0.25rem solid transparent;
-  }
+#mainNav .nav-link:active {
+  color: white;
+}
 
-  #mainNav.navbar-shrink .nav-link:hover {
-    color: var(--tech-green);
-  }
+#mainNav.navbar-shrink {
+  background-color: white;
+}
 
-  #mainNav.navbar-shrink .nav-link:active {
-    color: var(--tech-active-green);
-  }
+#mainNav.navbar-shrink .navbar-brand {
+  color: var(--tech-black);
+}
 
-  #mainNav.navbar-shrink .nav-link.active {
-    color: var(--tech-green);
-    outline: none;
-    border-bottom: 0.25rem solid var(--tech-green);
-  }
+#mainNav.navbar-shrink .nav-link {
+  color: var(--tech-black);
+  padding: 1.25rem 1.5rem 1rem;
+  border-bottom: 0.25rem solid transparent;
+}
 
-  .masthead {
+#mainNav.navbar-shrink .nav-link:hover {
+  color: var(--tech-green);
+}
+
+#mainNav.navbar-shrink .nav-link:active {
+  color: var(--tech-active-green);
+}
+
+#mainNav.navbar-shrink .nav-link.active {
+  color: var(--tech-green);
+  outline: none;
+  border-bottom: 0.25rem solid var(--tech-green);
+}
+
+  /* .masthead {
     height: 100vh;
     padding: 0;
   }
@@ -370,4 +380,4 @@ footer {
     border-width: .25rem;
     width: 30%;
   }
-}
+} */

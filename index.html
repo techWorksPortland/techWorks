@@ -71,7 +71,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            <a class="nav-link js-scroll-trigger text-right" href="#services">Services</a>
           </li>
           <!--test code-->
           <!-- <li class="nav-item">
@@ -81,7 +81,7 @@
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger text-right" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -110,25 +110,25 @@
   <section id="services" class="services-section text-center">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 mb-3 mb-md-0">
+        <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
           <div class="card py-4 h-100">
             <div class="card-body">
-              <h4 class="text-uppercase mb-4">Development</h4>
+              <h4 class="text-uppercase mb-4">Web</h4>
               <p class="text-left m-0">We will work one-on-one with you to bring the digital face of you and your business to life.</p>
             </div>
           </div>
         </div>
 
-        <div class="col-md-3 mb-3 mb-md-0">
+        <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
           <div class="card py-4 h-100">
             <div class="card-body">
               <h4 class="text-uppercase mb-4">Video</h4>
-              <p class="text-left m-0">Expertly crafting your story, I bring your vision to life with professional video editing and videography.</p>
+              <p class="text-left m-0">Expertly crafting your story, we can bring your vision to life with professional video editing and videography.</p>
             </div>
           </div>
         </div>
 
-        <div class="col-md-3 mb-3 mb-md-0">
+        <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
           <div class="card py-4 h-100">
             <div class="card-body">
               <h4 class="text-uppercase mb-4">Design</h4>
@@ -137,7 +137,7 @@
           </div>
         </div>
 
-        <div class="col-md-3 mb-3 mb-md-0">
+        <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
           <div class="card py-4 h-100">
             <div class="card-body">
               <h4 class="text-uppercase mb-4">SEO</h4>
@@ -269,7 +269,7 @@
               <i class="fas fa-map-marked-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Location</h4>
               <hr class="my-4">
-              <div class="small text-black-50"><p>Billings, MT</p></div>
+              <div class="small text-black-50"><p>Missoula, MT</p></div>
             </div>
           </div>
         </div>
@@ -281,7 +281,7 @@
               <h4 class="text-uppercase m-0">Email</h4>
               <hr class="my-4">
               <div class="small text-black-50">
-                <a href="mailto:techworksmontana@gmail.com" target="_blank">techworksmontana@gmail.com</a>
+                <a href="mailto:techworksmontana@gmail.com" target="_blank">contact@techworksmontana.com</a>
               </div>
             </div>
           </div>
@@ -344,9 +344,13 @@
 
   <script>
     document.getElementById('chevron').addEventListener('click', function() {
-        document.getElementById('services').scrollIntoView({ 
-            behavior: 'smooth' 
-        });
+        var target = document.getElementById('services');
+        if (!target) return;
+        var navbar = document.querySelector('.navbar');
+        var navHeight = navbar ? navbar.offsetHeight : 0;
+        var offset = 10; // extra spacing from top
+        var y = target.getBoundingClientRect().top + window.pageYOffset - navHeight - offset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
     });
   </script>
 </body>

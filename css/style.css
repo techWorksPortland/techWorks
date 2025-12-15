@@ -70,7 +70,6 @@
   background-size: cover;
 }
 
-/* Center success masthead content vertically and remove large top padding */
 .masthead.success {
   min-height: 100vh;
   padding: 0;

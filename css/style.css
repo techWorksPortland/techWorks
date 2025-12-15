@@ -70,6 +70,14 @@
   background-size: cover;
 }
 
+/* Center success masthead content vertically and remove large top padding */
+.masthead.success {
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
 .masthead h1 {
   font-family: 'Oswald';
   font-size: 10rem;

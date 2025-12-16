@@ -15,20 +15,21 @@
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Web Development, Design, SEO & Video Editing in Billings, MT | techWorks"/>
     <meta property="og:description" content="Specializing in web development, web design, SEO, and video editing, techWorks elevates your business's online presence in the Billings, MT region."/>
-    <meta property="og:image" content="img/ogimg.jpg"/>
-    <meta property="og:url" content="techworksmontana.com"/>
+    <meta property="og:image" content="https://techworksmontana.com/img/ogimg.jpg"/>
+    <meta property="og:url" content="https://techworksmontana.com/"/>
     <meta property="og:type" content="website"/>
   
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Web Development, Design, SEO & Video Editing in Billings, MT | techWorks">
     <meta name="twitter:description" content="Specializing in web development, web design, SEO, and video editing, techWorks elevates your business's online presence in the Billings, MT region.">
-    <meta name="twitter:image" content="img/ogimg.jpg">
+    <meta name="twitter:image" content="https://techworksmontana.com/img/ogimg.jpg">
   
     <!-- Additional tags -->
     <meta name="author" content="techWorks, Billings, MT">
-  </head>
-  
+    <link rel="canonical" href="https://techworksmontana.com/">
+    <meta name="robots" content="index,follow">
+
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap.min.css" rel="stylesheet">
 
@@ -37,7 +38,9 @@
   <link href="vendor/fontawesome-free.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=family=Montserrat&Oswald:wght@266;400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
   <link rel="icon" type="image/png" href="img/favicon.png">
 
@@ -48,11 +51,31 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KFL3JTSTTV"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag(){dataLayer.push(arguments);} 
     gtag('js', new Date());
 
     gtag('config', 'G-KFL3JTSTTV');
-  </script>  
+  </script>
+
+  <!-- Structured data: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "techWorks",
+    "url": "https://techworksmontana.com/",
+    "telephone": "+19712802730",
+    "email": "contact@techworksmontana.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Missoula",
+      "addressRegion": "MT",
+      "addressCountry": "US"
+    },
+    "description": "Web development, web design, SEO, and video editing serving Montana businesses.",
+    "areaServed": "Billings, MT"
+  }
+  </script>
 </head>
 
 <body id="home-page">
@@ -61,7 +84,7 @@
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger logo-width" href="#">
-        <img src="img/TECH WORKS LOGO (NO TEXT)-01.svg" alt="techWorks">
+        <img src="img/TECH WORKS LOGO (NO TEXT)-01.svg" alt="techWorks" loading="lazy">
         techWorks
       </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -93,9 +116,9 @@
   <header class="masthead">
     <div class="container d-flex vh-100 align-items-center">
       <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">techWorks</h1>
+        <h1 class="mx-auto my-0 text-uppercase">Web Development & SEO for Billings, MT — techWorks</h1>
         <br>
-        <h2 class="text-white-50 mx-auto mt-2 mb-4">Montana based digital agency taking your site from concept to reality.</h2>
+        <h2 class="text-white-50 mx-auto mt-2 mb-4">Montana-based digital agency: web design, video, and local SEO.</h2>
         <br>
         <a href="#contact" class="btn btn-primary js-scroll-trigger">Contact Us</a>
         <div class="mx-auto " id="chevron">
@@ -113,7 +136,7 @@
         <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
           <div class="card py-4 h-100">
             <div class="card-body">
-              <h4 class="text-uppercase mb-4">Web</h4>
+              <h4 class="text-uppercase mb-4"><a href="web.html">Web Development</a></h4>
               <p class="text-left m-0">We will work one-on-one with you to bring the digital face of you and your business to life.</p>
             </div>
           </div>
@@ -122,7 +145,7 @@
         <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
           <div class="card py-4 h-100">
             <div class="card-body">
-              <h4 class="text-uppercase mb-4">Video</h4>
+              <h4 class="text-uppercase mb-4"><a href="video.html">Video Production & Editing</a></h4>
               <p class="text-left m-0">Expertly crafting your story, we can bring your vision to life with professional video editing and videography.</p>
             </div>
           </div>
@@ -131,7 +154,7 @@
         <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
           <div class="card py-4 h-100">
             <div class="card-body">
-              <h4 class="text-uppercase mb-4">Design</h4>
+              <h4 class="text-uppercase mb-4"><a href="design.html">Design & Branding</a></h4>
               <p class="text-left m-0">With 10 years of art design on our side we can bring your site together with your personality and expectations in mind.</p>
             </div>
           </div>
@@ -140,7 +163,7 @@
         <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
           <div class="card py-4 h-100">
             <div class="card-body">
-              <h4 class="text-uppercase mb-4">SEO</h4>
+              <h4 class="text-uppercase mb-4"><a href="seo.html">SEO Services</a></h4>
               <p class="text-left m-0">Our SEO specialists will work diligently to make sure your site gets the audience you need to keep a steady flow of new customers.</p>
             </div>
           </div>
@@ -340,7 +363,7 @@
   <script src="vendor/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/script.js"></script>
+  <script src="js/script.js" defer></script>
 
   <script>
     document.getElementById('chevron').addEventListener('click', function() {

@@ -314,7 +314,11 @@
                 </div>
             </div>
 
-            <form class="contact-form" method="POST">
+            <form class="contact-form" name="contact" method="POST" action="/form-success.html" data-netlify="true" netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="contact">
+                <div class="form-group" style="display: none;">
+                    <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
+                </div>
                 <div class="form-group">
                     <label for="name">Your Name</label>
                     <input type="text" id="name" name="name" required aria-label="Your Name">
@@ -331,7 +335,6 @@
                     <label for="message">Tell us about your project</label>
                     <textarea id="message" name="message" required aria-label="Tell us about your project"></textarea>
                 </div>
-                <input type="hidden" name="_honeypot" class="honeypot">
                 <button type="submit" class="cta-button" style="align-self: flex-start;">Send Message</button>
             </form>
         </div>
